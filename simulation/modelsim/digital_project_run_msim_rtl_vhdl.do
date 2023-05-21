@@ -1,0 +1,19 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/91702/Desktop/Project1/IITB_Proc/register_file_VHDL.vhdl}
+vcom -93 -work work {C:/Users/91702/Desktop/Project1/IITB_Proc/control_unit.vhdl}
+vcom -93 -work work {C:/Users/91702/Desktop/Project1/IITB_Proc/memory_asyncread_syncwrite.vhd}
+
+vcom -93 -work work {C:/Users/91702/Desktop/Project1/IITB_Proc/Memory_asyncread_syncwrite.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  testbench
+
+add wave *
+view structure
+view signals
+run -all

@@ -1,0 +1,11 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/91702/Desktop/Project1/IITB_Processor/register_file_VHDL.vhdl
+source_file = 1, C:/Users/91702/Desktop/Project1/IITB_Processor/control_unit.vhdl
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/91702/Desktop/Project1/IITB_Processor/memory_asyncread_syncwrite.vhd
+design_name = control_unit
+instance = comp, \RST~I\, RST, control_unit, 1
+instance = comp, \clk~I\, clk, control_unit, 1
